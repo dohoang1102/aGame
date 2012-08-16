@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		936CDFCC15DCC19200EE26CC /* GamingLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 936CDFCB15DCC19200EE26CC /* GamingLayer.m */; };
+		936CDFD815DCDFEE00EE26CC /* octobiwan.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 936CDFD415DCDFEE00EE26CC /* octobiwan.jpeg */; };
+		936CDFD915DCDFEE00EE26CC /* droidtocat.png in Resources */ = {isa = PBXBuildFile; fileRef = 936CDFD515DCDFEE00EE26CC /* droidtocat.png */; };
+		936CDFDA15DCDFEE00EE26CC /* pusheencat.png in Resources */ = {isa = PBXBuildFile; fileRef = 936CDFD615DCDFEE00EE26CC /* pusheencat.png */; };
+		936CDFDB15DCDFEE00EE26CC /* original.png in Resources */ = {isa = PBXBuildFile; fileRef = 936CDFD715DCDFEE00EE26CC /* original.png */; };
+		936CDFDF15DCFA1500EE26CC /* right.png in Resources */ = {isa = PBXBuildFile; fileRef = 936CDFDE15DCFA1500EE26CC /* right.png */; };
+		936CDFE115DCFA1D00EE26CC /* left.png in Resources */ = {isa = PBXBuildFile; fileRef = 936CDFE015DCFA1D00EE26CC /* left.png */; };
 		93C16E1B15DB8DD6003BEB82 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93C16E1A15DB8DD6003BEB82 /* QuartzCore.framework */; };
 		93C16E1D15DB8DD6003BEB82 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93C16E1C15DB8DD6003BEB82 /* OpenGLES.framework */; };
 		93C16E1F15DB8DD6003BEB82 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93C16E1E15DB8DD6003BEB82 /* OpenAL.framework */; };
@@ -126,6 +133,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		936CDFCA15DCC19200EE26CC /* GamingLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamingLayer.h; sourceTree = "<group>"; };
+		936CDFCB15DCC19200EE26CC /* GamingLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamingLayer.m; sourceTree = "<group>"; };
+		936CDFD415DCDFEE00EE26CC /* octobiwan.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = octobiwan.jpeg; sourceTree = "<group>"; };
+		936CDFD515DCDFEE00EE26CC /* droidtocat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = droidtocat.png; sourceTree = "<group>"; };
+		936CDFD615DCDFEE00EE26CC /* pusheencat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pusheencat.png; sourceTree = "<group>"; };
+		936CDFD715DCDFEE00EE26CC /* original.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = original.png; sourceTree = "<group>"; };
+		936CDFDD15DCEFB300EE26CC /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		936CDFDE15DCFA1500EE26CC /* right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right.png; sourceTree = "<group>"; };
+		936CDFE015DCFA1D00EE26CC /* left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left.png; sourceTree = "<group>"; };
 		93C16E1615DB8DD6003BEB82 /* aGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93C16E1A15DB8DD6003BEB82 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		93C16E1C15DB8DD6003BEB82 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -384,6 +400,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		936CDFD215DCDFDA00EE26CC /* Static */ = {
+			isa = PBXGroup;
+			children = (
+				936CDFD315DCDFE200EE26CC /* Images */,
+			);
+			name = Static;
+			sourceTree = "<group>";
+		};
+		936CDFD315DCDFE200EE26CC /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				936CDFD415DCDFEE00EE26CC /* octobiwan.jpeg */,
+				936CDFE015DCFA1D00EE26CC /* left.png */,
+				936CDFDE15DCFA1500EE26CC /* right.png */,
+				936CDFD515DCDFEE00EE26CC /* droidtocat.png */,
+				936CDFD615DCDFEE00EE26CC /* pusheencat.png */,
+				936CDFD715DCDFEE00EE26CC /* original.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		936CDFDC15DCEF5100EE26CC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				93C16F8B15DB8E70003BEB82 /* GameMenuLayer.h */,
+				93C16F8C15DB8E70003BEB82 /* GameMenuLayer.m */,
+				936CDFCA15DCC19200EE26CC /* GamingLayer.h */,
+				936CDFCB15DCC19200EE26CC /* GamingLayer.m */,
+				93C16F7C15DB8DD8003BEB82 /* AppDelegate.h */,
+				93C16F7D15DB8DD8003BEB82 /* AppDelegate.m */,
+				93C16F7F15DB8DD8003BEB82 /* RootViewController.h */,
+				93C16F8015DB8DD8003BEB82 /* RootViewController.m */,
+				93C16F8215DB8DD8003BEB82 /* HelloWorldLayer.h */,
+				93C16F8315DB8DD8003BEB82 /* HelloWorldLayer.m */,
+				93C16F8515DB8DD8003BEB82 /* GameConfig.h */,
+				936CDFDD15DCEFB300EE26CC /* Constants.h */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 		93C16E0B15DB8DD6003BEB82 = {
 			isa = PBXGroup;
 			children = (
@@ -419,15 +475,8 @@
 		93C16E2A15DB8DD6003BEB82 /* aGame */ = {
 			isa = PBXGroup;
 			children = (
-				93C16F8B15DB8E70003BEB82 /* GameMenuLayer.h */,
-				93C16F8C15DB8E70003BEB82 /* GameMenuLayer.m */,
-				93C16F7C15DB8DD8003BEB82 /* AppDelegate.h */,
-				93C16F7D15DB8DD8003BEB82 /* AppDelegate.m */,
-				93C16F7F15DB8DD8003BEB82 /* RootViewController.h */,
-				93C16F8015DB8DD8003BEB82 /* RootViewController.m */,
-				93C16F8215DB8DD8003BEB82 /* HelloWorldLayer.h */,
-				93C16F8315DB8DD8003BEB82 /* HelloWorldLayer.m */,
-				93C16F8515DB8DD8003BEB82 /* GameConfig.h */,
+				936CDFDC15DCEF5100EE26CC /* Classes */,
+				936CDFD215DCDFDA00EE26CC /* Static */,
 				93C16E2B15DB8DD6003BEB82 /* Resources */,
 				93C16E3F15DB8DD6003BEB82 /* libs */,
 				93C16F7815DB8DD8003BEB82 /* Supporting Files */,
@@ -822,6 +871,12 @@
 				93C16E3915DB8DD6003BEB82 /* Icon.png in Resources */,
 				93C16E3B15DB8DD6003BEB82 /* Icon@2x.png in Resources */,
 				93C16E3E15DB8DD6003BEB82 /* iTunesArtwork in Resources */,
+				936CDFD815DCDFEE00EE26CC /* octobiwan.jpeg in Resources */,
+				936CDFD915DCDFEE00EE26CC /* droidtocat.png in Resources */,
+				936CDFDA15DCDFEE00EE26CC /* pusheencat.png in Resources */,
+				936CDFDB15DCDFEE00EE26CC /* original.png in Resources */,
+				936CDFDF15DCFA1500EE26CC /* right.png in Resources */,
+				936CDFE115DCFA1D00EE26CC /* left.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -931,6 +986,7 @@
 				93C16F8115DB8DD8003BEB82 /* RootViewController.m in Sources */,
 				93C16F8415DB8DD8003BEB82 /* HelloWorldLayer.m in Sources */,
 				93C16F8D15DB8E70003BEB82 /* GameMenuLayer.m in Sources */,
+				936CDFCC15DCC19200EE26CC /* GamingLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1024,6 +1080,7 @@
 				93C16F8A15DB8DD8003BEB82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,7 +7,7 @@
 //
 
 #import "GameMenuLayer.h"
-
+#import "GamingLayer.h"
 
 @implementation GameMenuLayer
 +(CCScene *) scene
@@ -51,14 +51,28 @@
         
         CCLabelTTF *label2 = [CCLabelTTF labelWithString:@"stop blink" fontName:@"Marker Felt" fontSize:12];
         CCMenuItemLabel *menuLabel2 = [CCMenuItemLabel itemWithLabel:label2
-                                                              target:self selector:@selector(stopBlink:)];
+                                                              target:self selector:@selector(stopBlink:)];        
         
-        CCMenu *mainMenu = [CCMenu menuWithItems: menuLabel1,menuLabel2, nil];
+        CCLabelTTF *label3 = [CCLabelTTF labelWithString:@"transfer" fontName:@"Marker Felt" fontSize:12];
+        CCMenuItemLabel *menuLabel3 = [CCMenuItemLabel itemWithLabel:label3
+                                                              target:self selector:@selector(transferToGameSence:)];
+        
+        CCMenu *mainMenu = [CCMenu menuWithItems: menuLabel1,menuLabel2,menuLabel3, nil];
         [mainMenu alignItemsVerticallyWithPadding:5];
         [self addChild:mainMenu];
     }
 	return self;
 }
+
+- (void) transferToGameSence:(CCMenuItem *)menuItem
+{
+    //CCTransitionFade *trans = [CCTransitionFade transitionWithDuration:1 scene:[GamingLayer scene] withColor:ccWHITE];
+    //CCTransitionTurnOffTiles *trans = [CCTransitionTurnOffTiles transitionWithDuration:1 scene:[GamingLayer scene]];
+    CCTransitionSplitCols *trans = [CCTransitionSplitCols transitionWithDuration:2 scene:[GamingLayer scene]];
+    [[CCDirector sharedDirector] pushScene:[GamingLayer scene]];
+    [[CCDirector sharedDirector] replaceScene:trans];
+}
+
 
 -(void) scheduleUpdates
 {
