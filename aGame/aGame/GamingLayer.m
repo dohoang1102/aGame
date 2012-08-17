@@ -7,7 +7,7 @@
 //
 
 #import "GamingLayer.h"
-
+#import "MiaoPlayer.h"
 
 @implementation GamingLayer
 +(CCScene *) scene
@@ -40,7 +40,8 @@
 
 		// add the label as a child to this Layer
 		[self addChild: label];
-        CCSprite *player = [CCSprite spriteWithFile:@"pusheencat.png"];
+        //CCSprite *player = [CCSprite spriteWithFile:@"pusheencat.png"];
+        MiaoPlayer *player = [MiaoPlayer node];
         player.tag = 10;
         [player setPosition:CGPointMake(size.width/2, size.height/2)];
         [self addChild: player];
@@ -83,28 +84,17 @@
 
 - (void)leftTouched:(CCMenuItem *)menuItem
 {
-    CCSprite *player = (CCSprite *)[self getChildByTag:10];
-    
-    float x = player.position.x;
-    if (player.position.x<=0) {
-        x = 600;
-    }
-    
-    [player setPosition:CGPointMake(x-5, player.position.y)];
+    MiaoPlayer *player = (MiaoPlayer *)[self getChildByTag:10];
+    [player easeMove:left speed:5 duration:1];
+
 }
 - (void)rightTouched:(CCMenuItem *)menuItem
 {
-    CCSprite *player = (CCSprite *)[self getChildByTag:10];
+    MiaoPlayer *player = (MiaoPlayer *)[self getChildByTag:10];
+    [player easeMove:right speed:5 duration:1];
 
-    float x = player.position.x;
-    if (player.position.x>600) {
-        x = 0;
-    }
-    
-    [player setPosition:CGPointMake(x+5, player.position.y)];
+
 }
-
-
 - (void)moveLeft:(CCMenuItem *)menuItem
 {
     [self updatePlayerPositionLeft];

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		932BB42A15DE285D00966467 /* MiaoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 932BB42915DE285D00966467 /* MiaoPlayer.m */; };
 		936CDFCC15DCC19200EE26CC /* GamingLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 936CDFCB15DCC19200EE26CC /* GamingLayer.m */; };
 		936CDFD815DCDFEE00EE26CC /* octobiwan.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 936CDFD415DCDFEE00EE26CC /* octobiwan.jpeg */; };
 		936CDFD915DCDFEE00EE26CC /* droidtocat.png in Resources */ = {isa = PBXBuildFile; fileRef = 936CDFD515DCDFEE00EE26CC /* droidtocat.png */; };
@@ -133,6 +134,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		932BB42815DE285D00966467 /* MiaoPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiaoPlayer.h; sourceTree = "<group>"; };
+		932BB42915DE285D00966467 /* MiaoPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MiaoPlayer.m; sourceTree = "<group>"; };
 		936CDFCA15DCC19200EE26CC /* GamingLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamingLayer.h; sourceTree = "<group>"; };
 		936CDFCB15DCC19200EE26CC /* GamingLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamingLayer.m; sourceTree = "<group>"; };
 		936CDFD415DCDFEE00EE26CC /* octobiwan.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = octobiwan.jpeg; sourceTree = "<group>"; };
@@ -436,6 +439,8 @@
 				93C16F8315DB8DD8003BEB82 /* HelloWorldLayer.m */,
 				93C16F8515DB8DD8003BEB82 /* GameConfig.h */,
 				936CDFDD15DCEFB300EE26CC /* Constants.h */,
+				932BB42815DE285D00966467 /* MiaoPlayer.h */,
+				932BB42915DE285D00966467 /* MiaoPlayer.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -987,6 +992,7 @@
 				93C16F8415DB8DD8003BEB82 /* HelloWorldLayer.m in Sources */,
 				93C16F8D15DB8E70003BEB82 /* GameMenuLayer.m in Sources */,
 				936CDFCC15DCC19200EE26CC /* GamingLayer.m in Sources */,
+				932BB42A15DE285D00966467 /* MiaoPlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
